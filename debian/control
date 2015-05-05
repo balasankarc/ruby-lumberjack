@@ -1,0 +1,22 @@
+Source: ruby-lumberjack
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb, rake, ruby-rspec
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-lumberjack.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-lumberjack.git;a=summary
+Homepage: https://github.com/bdurand/lumberjack
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-lumberjack
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+Description: Lumberjack is a logging implementation in Ruby
+ A simple, powerful, and very fast logging utility that can be a drop in 
+ replacement for Logger or ActiveSupport::BufferedLogger. Provides support 
+ for automatically rolling log files even with multiple processes writing the 
+ same log file. 

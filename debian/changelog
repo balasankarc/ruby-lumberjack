@@ -1,0 +1,5 @@
+ruby-lumberjack (1.0.9-1) unstable; urgency=low
+
+  * Initial release (Closes: #784339)
+
+ -- Balasankar C <balasankarc@autistici.org>  Tue, 05 May 2015 19:54:09 +0530
